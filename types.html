@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="static/css/custom.css">
+    <title>分类</title>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment c-padding-tb-mini c-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui header teal item">Blog</h2>
+                <a href="index.html" class="item item-toggle c-mobile-hide"><i class="mini icon home"></i>首页</a>
+                <a href="#" class="active item item-toggle c-mobile-hide"><i class="mini icon folder outline"></i>分类</a>
+                <a href="tags.html" class="item item-toggle c-mobile-hide"><i class="mini icon tags"></i>标签</a>
+                <a href="archives.html" class="item item-toggle c-mobile-hide"><i class="mini icon clone"></i>归档</a>
+                <a href="about.html" class="item item-toggle c-mobile-hide"><i class="mini icon info"></i>关于我</a>
+                <div class="right item item-toggle c-mobile-hide c-search-label">
+                    <div class="ui icon transparent inverted input">
+                        <input type="text" placeholder="Search...">
+                        <i class="icon link search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button c-right-top c-mobile-show">
+            <i class="icon sidebar"></i>
+        </a>
+    </nav>
+    <!-- 中间内容 -->
+    <div class="c-padding-tb-huge c-outer-container-small">
+        <div class="ui container">
+            <div class="ui stackable grid">
+                <div class="column">
+                    <!-- 内容头部 -->
+                    <div class="ui c-padding-lr-big secondary segment top attached">
+                        <div class="ui middle aligned two column grid">
+                            <div class="column">
+                                <h3 class="ui header teal">
+                                    <i class="folder outline icon c-header-icon"></i>分类</h3>
+                            </div>
+                            <div class="column right aligned">
+                                共
+                                <h1 class="ui header orange c-inline-block c-text-thin"> 14 </h1>
+                                篇
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 按钮 + 标签 -->
+                    <div class="ui attached segment c-padding-tb-big c-padding-lr-large">
+                        <div class="ui labeled button c-margin-tb-small">
+                            <a href="#" class="ui basic teal button">Java</a>
+                            <div class="ui basic teal left pointing label">24</div>
+                        </div>
+                        <div class="ui labeled button c-margin-tb-small">
+                            <a href="#" class="ui basic button">C++</a>
+                            <div class="ui basic left pointing label">10</div>
+                        </div>
+                        <div class="ui labeled button c-margin-tb-small">
+                            <a href="#" class="ui basic button">C++</a>
+                            <div class="ui basic left pointing label">10</div>
+                        </div>
+                        <div class="ui labeled button c-margin-tb-small">
+                            <a href="#" class="ui basic button">C++</a>
+                            <div class="ui basic left pointing label">10</div>
+                        </div>
+                        <div class="ui labeled button c-margin-tb-small">
+                            <a href="#" class="ui basic button">C++</a>
+                            <div class="ui basic left pointing label">10</div>
+                        </div>
+                        <div class="ui labeled button c-margin-tb-small">
+                            <a href="#" class="ui basic button">C++</a>
+                            <div class="ui basic left pointing label">10</div>
+                        </div>
+                        <div class="ui labeled button c-margin-tb-small">
+                            <a href="#" class="ui basic button">C++</a>
+                            <div class="ui basic left pointing label">10</div>
+                        </div>
+                        <div class="ui labeled button c-margin-tb-small">
+                            <a href="#" class="ui basic button">C++</a>
+                            <div class="ui basic left pointing label">10</div>
+                        </div>
+                        <div class="ui labeled button c-margin-tb-small">
+                            <a href="#" class="ui basic button">C++</a>
+                            <div class="ui basic left pointing label">10</div>
+                        </div>
+                    </div>
+                    <!-- 文章列表 -->
+                    <div class="ui teal attached segment">
+                        <div class="ui padded segment c-article-margin">
+                            <!-- 文章内容 -->
+                            <div class="ui middle aligned mobile reversed stackable grid">
+                                <div class="eleven wide column">
+                                    <h2 class="ui header">文章标题</h2>
+                                    <p class="c-text-thin c-text-spaced c-text-lined c-text-overflow">
+                                        Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。</p>
+                                    <!-- 作者 & 时间 & 浏览次数 & 分类 -->
+                                    <div class="ui middle aligned stackable mini horizontal link list">
+                                        <div class="item">
+                                            <img src="https://unsplash.it/100/100?image=1005" alt="#" class="ui avatar image">
+                                            <div class="content">
+                                                <a href="#" target="_blank" class="header">喻俊</a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i> 2019-8-22
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 666 次浏览
+                                        </div>
+                                        <div class="item">
+                                            <i class="folder outline icon"></i> 分类于
+                                        </div>
+                                        ...
+                                    </div>
+                                </div>
+                                <!-- 文章图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://unsplash.it/800/450?image=1005" alt="#" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 文章标签 -->
+                            <div class="c-margin-top-big">
+                                <div class="ui c-inline-block c-text-thin c-text-opacity c-text-spaced">
+                                    <i class="tags icon"></i>标签：</div>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">JVM</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">算法</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                            </div>
+                        </div>
+                        <div class="ui padded segment c-article-margin">
+                            <!-- 文章内容 -->
+                            <div class="ui middle aligned mobile reversed stackable grid">
+                                <div class="eleven wide column">
+                                    <h2 class="ui header">文章标题</h2>
+                                    <p class="c-text-thin c-text-spaced c-text-lined c-text-overflow">
+                                        Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。</p>
+                                    <!-- 作者 & 时间 & 浏览次数 & 分类 -->
+                                    <div class="ui middle aligned stackable mini horizontal link list">
+                                        <div class="item">
+                                            <img src="https://unsplash.it/100/100?image=1005" alt="#" class="ui avatar image">
+                                            <div class="content">
+                                                <a href="#" target="_blank" class="header">喻俊</a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i> 2019-8-22
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 666 次浏览
+                                        </div>
+                                        <div class="item">
+                                            <i class="folder outline icon"></i> 分类于
+                                        </div>
+                                        ...
+                                    </div>
+                                </div>
+                                <!-- 文章图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://unsplash.it/800/450?image=1005" alt="#" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 文章标签 -->
+                            <div class="c-margin-top-big">
+                                <div class="ui c-inline-block c-text-thin c-text-opacity c-text-spaced">
+                                    <i class="tags icon"></i>标签：</div>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">JVM</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">算法</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                            </div>
+                        </div>
+                        <div class="ui padded segment c-article-margin">
+                            <!-- 文章内容 -->
+                            <div class="ui middle aligned mobile reversed stackable grid">
+                                <div class="eleven wide column">
+                                    <h2 class="ui header">文章标题</h2>
+                                    <p class="c-text-thin c-text-spaced c-text-lined c-text-overflow">
+                                        Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。</p>
+                                    <!-- 作者 & 时间 & 浏览次数 & 分类 -->
+                                    <div class="ui middle aligned stackable mini horizontal link list">
+                                        <div class="item">
+                                            <img src="https://unsplash.it/100/100?image=1005" alt="#" class="ui avatar image">
+                                            <div class="content">
+                                                <a href="#" target="_blank" class="header">喻俊</a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i> 2019-8-22
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 666 次浏览
+                                        </div>
+                                        <div class="item">
+                                            <i class="folder outline icon"></i> 分类于
+                                        </div>
+                                        ...
+                                    </div>
+                                </div>
+                                <!-- 文章图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://unsplash.it/800/450?image=1005" alt="#" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 文章标签 -->
+                            <div class="c-margin-top-big">
+                                <div class="ui c-inline-block c-text-thin c-text-opacity c-text-spaced">
+                                    <i class="tags icon"></i>标签：</div>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">JVM</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">算法</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                            </div>
+                        </div>
+                        <div class="ui padded segment c-article-margin">
+                            <!-- 文章内容 -->
+                            <div class="ui middle aligned mobile reversed stackable grid">
+                                <div class="eleven wide column">
+                                    <h2 class="ui header">文章标题</h2>
+                                    <p class="c-text-thin c-text-spaced c-text-lined c-text-overflow">
+                                        Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。</p>
+                                    <!-- 作者 & 时间 & 浏览次数 & 分类 -->
+                                    <div class="ui middle aligned stackable mini horizontal link list">
+                                        <div class="item">
+                                            <img src="https://unsplash.it/100/100?image=1005" alt="#" class="ui avatar image">
+                                            <div class="content">
+                                                <a href="#" target="_blank" class="header">喻俊</a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i> 2019-8-22
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i> 666 次浏览
+                                        </div>
+                                        <div class="item">
+                                            <i class="folder outline icon"></i> 分类于
+                                        </div>
+                                        ...
+                                    </div>
+                                </div>
+                                <!-- 文章图片 -->
+                                <div class="five wide column">
+                                    <a href="#" target="_blank">
+                                        <img src="https://unsplash.it/800/450?image=1005" alt="#" class="ui rounded image">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 文章标签 -->
+                            <div class="c-margin-top-big">
+                                <div class="ui c-inline-block c-text-thin c-text-opacity c-text-spaced">
+                                    <i class="tags icon"></i>标签：</div>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">JVM</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">算法</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                                <a href="#" target="_blank" class="ui teal mini tag label c-tag c-margin-button-normal">Spring</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部分页 -->
+            <div class="ui c-padding-lr-big segment bottom attached">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <a href="#" class="ui button teal basic mini">上一页</a>
+                    </div>
+                    <div class="column right aligned">
+                        <a href="#" class="ui button teal basic mini">下一页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- 底部footer -->
+    <footer class="ui segment inverted vertical c-padding-tb-massive">
+        <div class="ui container center aligned">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="static/images/Avatar.jpg" alt="" class="ui rounded image" style="width: 110px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header c-text-spaced c-text-opacity">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">测试文章1</a>
+                        <a href="#" class="item">测试文章2</a>
+                        <a href="#" class="item">测试文章3</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header c-text-spaced c-text-opacity">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email: yourestsyj@gmail.com</a>
+                        <a href="#" class="item">QQ: 1069723864</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header c-text-spaced c-text-opacity">博客介绍</h4>
+                    <p class="c-text-thin c-text-spaced c-text-opacity">
+                        测试下长段落2333，大吉大利，今晚吃鸡。。。cdlskjflsfjledjfsldskfjdsljfdsffasdffssdfvxgdgregdf
+                    </p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="c-text-thin c-text-spaced c-text-opacity">Copyright © 2019-2020 xxxx</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function() {
+            $('.item-toggle').toggleClass('c-mobile-hide');
+        });
+    </script>
+</body>
+
+</html>

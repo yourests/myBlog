@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/custom.css">
+    <title>关于我</title>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="ui inverted attached segment c-padding-tb-mini c-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui header teal item">Blog</h2>
+                <a href="index.html" class="item item-toggle c-mobile-hide"><i class="mini icon home"></i>首页</a>
+                <a href="types.html" class="item item-toggle c-mobile-hide"><i class="mini icon folder outline"></i>分类</a>
+                <a href="tags.html" class="item item-toggle c-mobile-hide"><i class="mini icon tags"></i>标签</a>
+                <a href="archives.html" class="item item-toggle c-mobile-hide"><i class="mini icon clone"></i>归档</a>
+                <a href="#" class="active item item-toggle c-mobile-hide"><i class="mini icon info"></i>关于我</a>
+                <div class="right item item-toggle c-mobile-hide c-search-label">
+                    <div class="ui icon transparent inverted input">
+                        <input type="text" placeholder="Search...">
+                        <i class="icon link search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button c-right-top c-mobile-show">
+            <i class="icon sidebar"></i>
+        </a>
+    </nav>
+    <!-- 中间内容 -->
+    <div class="c-padding-tb-huge c-outer-container-small">
+
+    </div>
+    <br>
+    <br>
+
+    <!-- 底部footer -->
+    <footer class="ui segment inverted vertical c-padding-tb-massive">
+        <div class="ui container center aligned">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="static/images/Avatar.jpg" alt="" class="ui rounded image" style="width: 110px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header c-text-spaced c-text-opacity">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">测试文章1</a>
+                        <a href="#" class="item">测试文章2</a>
+                        <a href="#" class="item">测试文章3</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header c-text-spaced c-text-opacity">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Email: yourestsyj@gmail.com</a>
+                        <a href="#" class="item">QQ: 1069723864</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header c-text-spaced c-text-opacity">博客介绍</h4>
+                    <p class="c-text-thin c-text-spaced c-text-opacity">
+                        测试下长段落2333，大吉大利，今晚吃鸡。。。cdlskjflsfjledjfsldskfjdsljfdsffasdffssdfvxgdgregdf
+                    </p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="c-text-thin c-text-spaced c-text-opacity">Copyright © 2019-2020 xxxx</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script>
+        $('.menu.toggle').click(function() {
+            $('.item-toggle').toggleClass('c-mobile-hide');
+        });
+    </script>
+</body>
+
+</html>

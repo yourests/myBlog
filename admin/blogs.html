@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <link rel="stylesheet" href="../static/css/custom.css">
+  <title>博客管理</title>
+</head>
+
+<body>
+  <!-- 导航 -->
+  <nav class="ui inverted attached segment c-padding-tb-mini c-shadow-small">
+    <div class="ui container">
+      <div class="ui inverted secondary stackable menu">
+        <h2 class="ui header teal item">管理后台</h2>
+        <a href="#" class="active item item-toggle c-mobile-hide"><i class="mini icon home"></i>博客</a>
+        <a href="#" class="item item-toggle c-mobile-hide"><i class="mini icon idea"></i>分类</a>
+        <a href="#" class="item item-toggle c-mobile-hide"><i class="mini icon tags"></i>标签</a>
+        <div class="right item-toggle c-mobile-hide menu">
+          <div class="ui dropdown item">
+            <div class="text">
+              <img class="ui avatar image" src="https://unsplash.it/100/100?image=1005">
+              喻俊
+            </div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+              <a href="#" class="item">注销</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="right item item-toggle c-mobile-hide">
+          <div class="ui icon transparent inverted input">
+            <input type="text" placeholder="Search...">
+            <i class="icon link search"></i>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button c-right-top c-mobile-show">
+      <i class="icon sidebar"></i>
+    </a>
+  </nav>
+  <!-- 二级导航 -->
+  <div class="ui attached pointing menu">
+    <div class="ui container">
+      <div class="right menu">
+        <a href="./blogs-publish.html" class="item">发布</a>
+        <a href="#" class="teal active item">博客管理</a>
+      </div>
+    </div>
+  </div>
+  <!-- 中间内容 -->  
+  <div class="c-padding-tb-huge c-outer-container-small">
+    <div class="ui container">
+      <!-- 搜索栏 -->
+      <form action="#" method="post" class="ui segment form">
+        <div class="inline fields">
+          <div class="field">
+            <input type="text" name="title" placeholder="标题">
+          </div>
+          <div class="field">
+            <div class="ui selection dropdown">
+              <input type="hidden" name="type">
+              <i class="dropdown icon"></i>
+              <div class="default text">分类</div>
+              <div class="menu">
+                <div class="item" data-value="1">分类1</div>
+                <div class="item" data-value="2">分类2</div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" name="recommend" id="recommendBox">
+              <label for="recommendBox">推荐</label>
+            </div>
+          </div>
+          <div class="field">
+            <button class="ui mini teal basic button">
+              <i class="search icon"></i>搜索
+            </button>
+          </div>
+        </div>
+      </form>
+      <!-- 展示表格 -->
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>标题</th>
+            <th>类型</th>
+            <th>推荐</th>
+            <th>更新时间</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>标题1</td>
+            <td>类型1</td>
+            <td>是</td>
+            <td>时间1</td>
+            <td>
+              <a href="#" class="ui mini teal basic button">编辑</a>
+              <a href="#" class="ui mini red basic button">删除</a>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="6">
+              <div class="ui mini pagination menu">
+                <a href="#" class="item">上一页</a>
+                <a href="#" class="item">下一页</a>
+                <!-- <a class="icon item">
+                  <i class="left chevron icon"></i>
+                </a>
+                <a class="item">1</a>
+                <a class="item">2</a>
+                <a class="item">3</a>
+                <a class="item">4</a>
+                <a class="icon item">
+                  <i class="right chevron icon"></i>
+                </a> -->
+              </div>
+              <a href="#" class="ui mini right floated teal basic button">新增</a>
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- 底部footer -->
+  <footer class="ui segment inverted vertical c-padding-tb-massive">
+    <div class="ui container center aligned">
+      <div class="ui inverted divided stackable grid">
+        <div class="three wide column">
+          <div class="ui inverted link list">
+            <div class="item">
+              <img src="../static/images/Avatar.jpg" alt="" class="ui rounded image" style="width: 110px;">
+            </div>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header c-text-spaced c-text-opacity">最新博客</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">测试文章1</a>
+            <a href="#" class="item">测试文章2</a>
+            <a href="#" class="item">测试文章3</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header c-text-spaced c-text-opacity">联系我</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Email: yourestsyj@gmail.com</a>
+            <a href="#" class="item">QQ: 1069723864</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header c-text-spaced c-text-opacity">博客介绍</h4>
+          <p class="c-text-thin c-text-spaced c-text-opacity">
+            测试下长段落2333，大吉大利，今晚吃鸡。。。cdlskjflsfjledjfsldskfjdsljfdsffasdffssdfvxgdgregdf
+          </p>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <p class="c-text-thin c-text-spaced c-text-opacity">Copyright © 2019-2020 xxxx</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+  <script>
+    $('.menu.toggle').click(function () {
+      $('.item-toggle').toggleClass('c-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+      on: 'hover'
+    });
+  </script>
+</body>
+
+</html>
